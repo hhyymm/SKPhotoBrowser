@@ -116,4 +116,12 @@ static UIImage *animatedImageWithAnimatedGIFReleasingImageSource(CGImageSourceRe
     return animatedImageWithAnimatedGIFReleasingImageSource(CGImageSourceCreateWithURL(toCF url, NULL));
 }
 
++ (UIImage * _Nullable)sk_imageWithData:(NSData * _Nonnull)theData {
+#if __has_include(<YYImage/YYImage.h>)
+    return [YYImage imageWithData:theData];
+#else
+    return [UIImage animatedImageWithAnimatedGIFData:theData];
+#endif
+}
+
 @end

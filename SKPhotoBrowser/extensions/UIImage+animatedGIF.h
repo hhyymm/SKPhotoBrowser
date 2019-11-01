@@ -29,4 +29,6 @@
 */
 + (UIImage * _Nullable)animatedImageWithAnimatedGIFURL:(NSURL * _Nonnull)theURL;
 
++ (UIImage * _Nullable)sk_imageWithData:(NSData * _Nonnull)theData;
+
 @end

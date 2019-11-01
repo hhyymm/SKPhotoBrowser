@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+
 #import "UIImage+animatedGIF.h"
 
 //! Project version number for SKPhotoBrowser.
